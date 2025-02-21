@@ -3,7 +3,7 @@
 
 ✦ A Project: My Brand New Personal Portfolio Website for My Auvance Business. <br>
 ✦ Everything is currently under the works, being built in <ins>**React**</ins> with Extra Spices! <br>
-✦  <br>
+✦ Design followed as close as to Adobe XD Wireframe Design <br>
 
 ⋆ Upcoming Features:
   - Semantics & Responsive Web Design  <br>
