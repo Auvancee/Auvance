@@ -28,10 +28,13 @@ const AppRouter = () => {
     <>
 
       <Routes>
-        
+
         <Route path="../pages/PageHome.jsx" element={<PageHome />} />
+
         <Route path="../pages/PageWorks.jsx" element={<PageWorks />} />
+
         <Route path="../pages/PageSynopsis.jsx" element={<PageSynopsis />} />
+        
         <Route path="../pages/PageArchive.jsx" element={<PageArchive />} />
 
       </Routes>
