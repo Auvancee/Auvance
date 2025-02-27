@@ -8,14 +8,12 @@ $ npm install @splidejs/react-splide  */
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import { APP_FOLDER_NAME } from "../global/global";
 // import { useState, useEffect } from "react";
-// import Footer from "../components/Footer";
-// import Header from "../components/Header";
-// import PageHome from "../pages/PageHome";
-// import PageAbout from "../pages/PageAbout";
-// import PageFavourites from "../pages/PageFav";
-// import PageMovie from "../pages/PageMovie";
-// import LoginPage from "../pages/Login";
-// import PageWelcome from "../pages/Welcome";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import PageHome from "../pages/PageHome";
+import PageWorks from "../pages/PageWorks";
+import PageSynopsis from "../pages/PageSynopsis";
+import PageArchive from "../pages/PageArchive";
 
 
 const AppRouter = () => {
@@ -26,6 +24,8 @@ const AppRouter = () => {
 
  return (
     <>
+
+    <Header />
 
       <Routes>
 
@@ -38,6 +38,8 @@ const AppRouter = () => {
         <Route path="../pages/PageArchive.jsx" element={<PageArchive />} />
 
       </Routes>
+
+    <Footer />
 
     </>
   );
