@@ -1,13 +1,4 @@
-/* 
- Some Notes, To Run this server locally, you need npm install the react splide
- otherwise the package will not load and it will break everything.
-
-$ npm install @splidejs/react-splide  */
-
-
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import { APP_FOLDER_NAME } from "../global/global";
-// import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PageHome from "../pages/PageHome";
@@ -15,39 +6,32 @@ import PageWorks from "../pages/PageWorks";
 import PageSynopsis from "../pages/PageSynopsis";
 import PageArchive from "../pages/PageArchive";
 
-
 const AppRouter = () => {
 
 
 
-
-
- return (
+  
+  return (
+    
     <>
+      <Header />
 
-    <Header />
+        <Routes>
+          <Route path="/" element={<PageHome />} />
+          <Route path="/works" element={<PageWorks />} />
+          <Route path="/synopsis" element={<PageSynopsis />} />
+          <Route path="/archive" element={<PageArchive />} />
+        </Routes>
 
-      <Routes>
-
-        <Route path="../pages/PageHome.jsx" element={<PageHome />} />
-
-        <Route path="../pages/PageWorks.jsx" element={<PageWorks />} />
-
-        <Route path="../pages/PageSynopsis.jsx" element={<PageSynopsis />} />
-        
-        <Route path="../pages/PageArchive.jsx" element={<PageArchive />} />
-
-      </Routes>
-
-    <Footer />
-
+      <Footer />
     </>
+
   );
 };
 
 const App = () => {
   return (
-    <BrowserRouter basename={`/${APP_FOLDER_NAME}`}>  
+    <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
   );
